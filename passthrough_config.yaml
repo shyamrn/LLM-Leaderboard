@@ -1,0 +1,9 @@
+slices:
+  - sources: 
+    - model: /mergekit-main/models/Mistral-7B-Instruct-v0.2
+      layer_range: [0,32]
+  - sources:
+    - model: /mergekit-main/models/Kunoichi-DPO-v2-7B
+      layer_range: [24,32]
+merge_method: passthrough
+dtype: bfloat16

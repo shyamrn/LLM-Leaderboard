@@ -1,0 +1,16 @@
+models:
+  - model: /mergekit-main/models/Kunoichi-DPO-v2-7B
+    parameters:
+      weight: 0.4
+      density: 0.8 
+  - model: /mergekit-main/models/NeuralOmniWestBeaglake-7B
+    parameters:
+      weight: 0.3
+      density: 0.8
+  - model: /mergekit-main/models/Experiment26-7B
+    parameters:
+      weight: 0.3
+      density: 0.8
+base_model: /mergekit-main/models/Mistral-7B-Instruct-v0.2
+merge_method: ties
+dtype: bfloat16

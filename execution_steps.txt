@@ -1,0 +1,8 @@
+# Load models from HuggingFace --> Git Bash
+git lfs clone https://huggingface.co/yam-peleg/Experiment26-7B
+
+# Merge models --> Command Prompt
+mergekit-yaml ta_maverick_v2_config.yaml maverick_v2_folder --copy-tokenizer --allow-crimes --out-shard-size 1B --lazy-unpickle
+
+# Upload models to HuggingFace --> Command Prompt
+python model_uploader.py

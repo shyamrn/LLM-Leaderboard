@@ -1,0 +1,15 @@
+slices:
+  - slices:
+    - model: /mergekit-main/models/Mistral-7B-Instruct-v0.2
+      layer_range: [0,32]
+    - model: /mergekit-main/models/Kunoichi-DPO-v2-7B
+      layer_range: [0,32]
+parameters:
+    - filter: self_attn
+      value: [0, 0.5, 0.3, 0.7, 1]
+    - filter: mlp
+      value: [1, 0.5, 0.7, 0.3, 0]
+    - value: 0.5
+base_model: /mergekit-main/models/Kunoichi-DPO-v2-7B
+merge_method: slerp
+dtype: bfloat16

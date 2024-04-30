@@ -1,0 +1,10 @@
+models:
+  - model: D:\Learning Centre\GenAI\LLM Leaderboard\2024042801\mergekit-main\models\Kunoichi-DPO-v2-7B
+    parameters:
+      weight: 0.4
+  - model: D:\Learning Centre\GenAI\LLM Leaderboard\2024042801\mergekit-main\models\NeuralOmniWestBeaglake-7B
+    parameters:
+      weight: 0.6
+base_model: D:\Learning Centre\GenAI\LLM Leaderboard\2024042801\mergekit-main\models\Mistral-7B-Instruct-v0.2
+merge_method: task_arithmetic
+dtype: bfloat16
